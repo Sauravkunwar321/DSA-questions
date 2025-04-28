@@ -1,0 +1,16 @@
+#grandparent{
+    border: 1px solid black;
+    height: 100vh;
+}
+
+#parent{
+    border: 1px solid green;
+    height: 50vh;
+    margin: 5px;
+}
+
+#child{
+    border: 1px solid red;
+    height: 20vh;
+    margin: 5px;
+}
