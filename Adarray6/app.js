@@ -78,23 +78,39 @@
 
 //Q.4 ., right rotation by k steps
 
-let arr= [1,2,3,4,5]
+// let arr= [1,2,3,4,5]
 
-let k = Number(prompt("Enter your right rotation steps"))
+// let k = Number(prompt("Enter your right rotation steps"))
 
-k = k % arr.length;
+// k = k % arr.length;
 
-for(let i=0; i<k; i++){
-    let copy = arr[arr.length-1];
+// for(let i=0; i<k; i++){
+//     let copy = arr[arr.length-1];
 
-    for(let j=arr.length-1; j>0; j--){
-        arr[j] = arr[j-1];
-    }
+//     for(let j=arr.length-1; j>0; j--){
+//         arr[j] = arr[j-1];
+//     }
 
-    arr[0] = copy;
+//     arr[0] = copy;
+// }
+
+
+// console.log(arr);
+
+//more optimized way
+
+//left rotaion by k steps
+
+let arr = [1,2,3,4,5]
+
+let k = Number(prompt("Enyer your left rotation steps"));
+
+let temp = new Array(arr.length)
+k = k%arr.length
+
+for(let i=0 ; i<arr.length; i++){
+    temp[i] = arr[(i+k)%arr.length]
 }
-
-
-console.log(arr);
+console.log(temp)
 
 
